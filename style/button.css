@@ -1,0 +1,27 @@
+/* button */
+
+.btn-black {
+  display: inline-block;
+  border: none;
+  padding: 1.4rem 4.5rem;
+  border-radius: 3rem;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--ink-color);
+  }
+}
+
+.btn-red {
+  display: inline-block;
+  border: none;
+  padding: 1.4rem 4.5rem;
+  border-radius: 3rem;
+  color: var(--white-color);
+  background-color: var(--red-color);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--yellow-color);
+  }
+}

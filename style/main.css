@@ -1,519 +1,469 @@
-*::after,
-*::before,
+/* plus-jakarta-sans-regular - latin */
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-500 - latin */
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-700 - latin */
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1110px;
+body {
+  font-family: "Plus Jakarta Sans";
 }
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
-ul,
-ol {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
-.free-consultation {
-  transition: 0.3s;
-}
-
-.free-consultation a {
-  max-width: 22.8rem;
-  max-height: 5.6rem;
-  border-radius: 30px;
-  background-color: black;
+.container {
+  max-width: 1120px;
   width: 100%;
-  font-family: Plus Jakarta Sans;
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 2.8rem;
-  text-align: left;
-  padding: 1.4rem 4.5rem;
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
+  margin: 0 auto;
+  padding: 5rem 1rem;
 }
 
-.free-consultation a:hover {
-  background-color: #755cde;
-  border-radius: 30px;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.head {
-  padding-top: 2rem;
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-body {
-  background-color: #fff7f0;
+ul,
+li,
+ol {
+  list-style: none;
 }
 
-.nav-content {
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
-.nav-content h1 {
+.btn-1 {
+  padding: 1.4rem 4.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 55px;
   font-family: Plus Jakarta Sans;
-  font-size: 5.6rem;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 7.56rem;
-  padding-top: 6.6rem;
+  line-height: 28px;
+  text-align: left;
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: 0.3s;
 }
 
-.nav-content p {
-  font-family: Plus Jakarta Sans;
+.btn-1:hover {
+  background-color: #755cde;
+  color: #fff7f0;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5.6rem;
+  line-height: 7rem;
+}
+
+.text {
+  padding: 0 18rem;
   font-size: 1.8rem;
-  font-weight: 500;
   line-height: 2.8rem;
-  padding-top: 2.3rem;
-  max-width: 73rem;
-  height: 5.6rem;
   color: #7a746e;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 100 rem;
 }
 
-.nav-content {
-  max-width: 752px;
-  max-height: 150px;
+.content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: 14rem;
-}
-
-.graphic-design {
-  max-width: 35.4rem;
-  background-color: #755cde;
-  padding-top: 2.4rem;
-  padding-right: 2.4rem;
-  border-radius: 10px;
-  margin-top: 11rem;
-}
-
-.graphic-design h2 {
-  /* padding-top: 31rem; */
-  padding-left: 2.4rem;
-  padding-bottom: 2.4rem;
-  font-family: Plus Jakarta Sans;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.24rem;
-  color: #fff;
-}
-
-.ui-ux {
-  max-width: 164px;
-  max-height: 182px;
-  background-color: #f6a560;
-  border-radius: 10px;
-  height: 35%;
-}
-
-.ui-ux-and-apps {
-  display: flex;
-  column-gap: 2.4rem;
-  margin-left: -10rem;
-  margin: 0 auto;
-}
-
-.graphic-design-image {
-  padding-bottom: 9.4rem;
-  padding-left: 20.2rem;
-}
-
-.ui-ux-content h2 {
-  font-family: Plus Jakarta Sans;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.24rem;
-  color: #fff;
-  padding-bottom: 3rem;
-  padding-left: 2.4rem;
-}
-
-.ui-ux-image {
-  padding-left: 7.6rem;
-  padding-bottom: 4rem;
-  padding-top: 2.4rem;
-  padding-right: 2.4rem;
-}
-
-.ui-ux {
-  margin-top: 11rem;
-  margin-left: -37.5rem;
-}
-
-.apps {
-  background-color: #f39e9e;
-  max-width: 16.4rem;
-  max-height: 16.7rem;
-  border-radius: 1rem;
-  margin-top: 11rem;
-}
-
-.apps-content h2 {
-  font-family: Plus Jakarta Sans;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.24rem;
-  color: #fff;
-  padding-bottom: 2.4rem;
-  padding-left: 2.4rem;
-}
-
-.apps-image {
-  padding-bottom: 4rem;
-  padding-top: 2.4rem;
-  padding-left: 7.6rem;
-  padding-right: 2.4rem;
-}
-
-.ui-ux-and-apps {
-  display: flex;
-  column-gap: 2.5rem;
-  margin-right: 20rem;
-}
-
-.types {
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-
-.Illustrations {
-  max-width: 354px;
-  max-height: 158px;
-  background-color: #eb7565;
-  color: #fff;
-  border-radius: 10px;
-  margin-top: 32rem;
-}
-
-.Illustrations-content h2 {
-  font-family: Plus Jakarta Sans;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.24rem;
-  padding: 0 0 2.4rem 2.4rem;
-}
-
-.Illustrations-image {
-  padding-bottom: 1.6rem;
-  padding-left: 20rem;
-  padding-right: 2.5rem;
-  padding-top: 2.4rem;
-}
-
-.graphic-design-ui-ux-apps-and-illustration {
-  display: flex;
-  column-gap: 2.4rem;
-  flex-wrap: wrap;
-  /* max-width: 73.2rem;
-  max-height: 36.4rem; */
-}
-
-.photography {
-  max-width: 354px;
-  max-height: 182px;
-  height: 100%;
-  width: 100%;
-  background-color: #61c4b7;
-  border-radius: 1rem;
-  margin-left: 2.5rem;
-  margin-top: 10.9rem;
-}
-
-.photography-content h2 {
-  font-family: Plus Jakarta Sans;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.24rem;
-  color: #fff;
-  padding-bottom: 2.4rem;
-  padding-left: 2.4rem;
-}
-
-.photography-image {
-  padding-bottom: 4rem;
-  padding-left: 17rem;
-  padding-top: 2.4rem;
-  padding-right: 2.4rem;
-}
-
-.Motion-Graphics {
-  max-width: 35.4rem;
-  max-height: 15.8rem;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  background-color: #552049;
-  margin-top: 32rem;
-  margin-left: -35.5rem;
-}
-
-.Motion-Graphics-content {
-  font-family: Plus Jakarta Sans;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.24rem;
-  color: #fff;
-  padding: 0 0 2.4rem 2.4rem;
-}
-
-.Motion-Graphics-image {
-  padding-bottom: 1.6rem;
-  padding-left: 20.2rem;
-  padding-top: 2.4rem;
-  padding-right: 2.4rem;
-}
-
-.worker {
-  display: flex;
-  align-items: center;
-  margin-top: 13.6rem;
-}
-
-.worker-content h2 {
-  max-width: 54rem;
-  max-height: 10rem;
-  font-family: Plus Jakarta Sans;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 5.4rem;
-  color: #030303;
-  text-align: left;
-}
-
-.worker-content p {
-  max-width: 54rem;
-  max-height: 8.4rem;
-  color: #7a746e;
-  font-family: Plus Jakarta Sans;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 28px;
-  text-align: left;
-  padding-top: 3.4rem;
-}
-
-.worker-content {
-  padding-left: 3.4rem;
-}
-
-.fre-consultation {
-  margin-top: 6rem;
-}
-
-.my-work-content h2 {
-  font-family: Plus Jakarta Sans;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40.32px;
-  text-align: left;
-  color: #030303;
   text-align: center;
-  margin-top: 8.8rem;
+  margin-top: 7rem;
 }
 
-.fre-consultation a {
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
+.h4-1,
+.h4-2,
+.h4-3,
+.h4-4,
+.h4-5,
+.h4-6 {
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
   font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  color: #fff;
-  max-width: 22.8rem;
-  max-height: 5.6rem;
-  background-color: #eb7565;
-  border-radius: 4rem;
-  text-decoration: none;
-  padding: 1.4rem 4.5rem;
-  transition: 0.3s;
+  font-style: normal;
 }
 
-.fre-consultation a:hover {
-  background-color: #f6a560;
-  transition: 0.3s;
+.content-8 h2 {
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.btn {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-color: #030303;
-  padding: 24px;
-  border: none;
-  transition: 0.3s;
+.content h1 {
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.btn:hover {
-  background-color: #755cde;
-  transition: 0.3s;
+.content p {
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.my-work-image {
-  overflow-y: hidden;
-  margin-top: 5.6rem;
-}
-
-.buttons {
+.content-1 {
   display: flex;
   justify-content: center;
-  column-gap: 1.6rem;
-  margin-top: 56px;
+  gap: 20px;
 }
 
-.section-book {
-  border-radius: 10px;
-  max-width: 111rem;
-  max-height: 32rem;
-  background-color: #030303;
-  padding-left: 6.4rem;
-  margin-top: 8.8rem;
-  padding-bottom: 10rem;
-}
-
-.section-book h2 {
-  padding-top: 8.1rem;
-  width: 540px;
-  height: 40px;
-  color: #fff;
-  font-family: Plus Jakarta Sans;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50.4px;
-  text-align: left;
-}
-
-.section-book p {
-  color: #fff7f0;
-  max-width: 54rem;
-  max-height: 8.4rem;
-  font-family: Plus Jakarta Sans;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 28px;
-  text-align: left;
-  padding-top: 6.5rem;
-}
-
-.section-book {
+.content-3 {
   display: flex;
-  column-gap: 18.2rem;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
-.section-4-free-consultation {
+.content-4 {
+  display: flex;
+  gap: 2rem;
+}
+
+.content-5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box {
+  padding: 2.4rem 2.4rem;
+  border-radius: 10px;
+  display: flex;
+}
+
+.box1 {
+  height: 36rem;
+  background-color: #755cde;
   color: #fff;
-  text-decoration: none;
 }
 
-.a {
-  margin-top: 13.2rem;
-  font-family: Plus Jakarta Sans;
+.box2 {
+  max-width: 17rem;
+  width: 100%;
+  height: 18.2rem;
+  background-color: #f6a560;
+  color: #fff;
+}
+
+.box3 {
+  max-width: 17rem;
+  width: 100%;
+  height: 18.2rem;
+  background-color: #f39e9e;
+  color: #fff;
+}
+
+.box4 {
+  height: 18.2rem;
+  background-color: #61c4b7;
+  color: #fff;
+}
+
+.box5 {
+  height: 15.8rem;
+  background-color: #eb7565;
+  color: #fff;
+}
+
+.box-5 img {
+  padding-left: 20rem;
+}
+
+.box6 {
+  height: 15.8rem;
+  background-color: #552049;
+  color: #fff;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #ffffff;
+}
+
+.h4-1 {
+  position: relative;
+  top: 28rem;
+}
+
+.h4-2 {
+  position: relative;
+  top: 11rem;
+}
+
+.h4-3 {
+  position: relative;
+  top: 11rem;
+}
+
+.h4-4 {
+  position: relative;
+  top: 8rem;
+}
+
+.h4-5 {
+  position: relative;
+  top: 11rem;
+}
+
+.h4-6 {
+  position: relative;
+  top: 8rem;
+}
+
+.btn-2 {
+  padding: 1.4rem 4.5rem;
+  background-color: #eb7565;
+  color: #fff;
+  border-radius: 55px;
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: 0.3s;
   font-size: 16px;
   font-weight: 700;
   line-height: 28px;
-  padding: 1.4rem 4.5rem;
-  color: #fff;
-  text-decoration: none;
-  background-color: #eb7565;
-  max-width: 22.8rem;
-  max-height: 5.6rem;
-  border-radius: 10rem;
+}
+
+.btn-2:hover {
+  background-color: #f6a560;
+  color: #fff7f0;
   transition: 0.3s;
 }
 
-.a:hover {
-  background-color: #f39e9e;
+.h2 {
+  font-size: 40px;
+  line-height: 50.4px;
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text3 {
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+}
+
+.content-7 {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.text2 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #7a746e;
+  padding: 3rem 0 4rem 0;
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.group-img {
+  overflow-y: hidden;
+}
+
+.button {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  background-color: #030303;
+  padding: 2.4rem;
+  border: none;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-@media (max-width: 1000px) {
-  .worker p {
-    padding-top: 8rem;
-  }
-  .fre-consultation {
-    margin-top: 15rem;
-  }
+.button:hover {
+  background-color: #755cde;
+  transition: 0.3s;
 }
 
-@media (max-width: 700px) {
-  .worker {
-    display: block;
-    text-align: center;
-    margin-top: 20rem;
-    margin-left: 3rem;
-  }
-  .worker-content h2 {
-    text-align: center;
-  }
-  .worker-content p {
-    text-align: center;
-  }
-  .section-book {
-    display: block;
-    text-align: center;
-  }
-  .section-book h2 {
-    text-align: center;
-  }
-  .section-book p {
-    text-align: center;
-  }
-  .nav-content {
-    margin-left: 3rem;
-  }
-  .section-book {
-    width: 600px;
-    height: 800px;
-  }
-  .a {
-    margin-top: 10rem;
-  }
+.content-9 {
+  column-gap: 1.6rem;
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 610px) {
-  .my-work-content h2 {
-    width: 200px;
-    text-align: center;
-    display: flex;
+.content-9 h3 {
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.content-10 {
+  max-width: 111rem;
+  padding: 8rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #030303;
+  border-radius: 1.5rem;
+}
+
+.text3 {
+  max-width: 54rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #fff7f0;
+  padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-1 {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+  .text {
+    padding: 0 3rem;
+  }
+  .content-2 {
+    max-width: 36.1rem;
+    width: 100%;
+  }
+  .content-3 {
+    max-width: 36.4rem;
+    row-gap: 2rem;
+  }
+  .content-4 {
+    max-width: 36.4rem;
+    width: 100%;
+  }
+  .content-5 {
     justify-content: center;
   }
-  .a {
-    margin-top: 10rem;
+  .box6 {
+    height: 18.2rem;
   }
-  .section-book {
-    display: block;
+  .h4-6 {
+    position: relative;
+    top: 11rem;
+  }
+  .content-10 {
+    flex-direction: column;
     text-align: center;
   }
-  .section-book h2 {
+  .content-7 {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-7 {
+    gap: 6rem;
+  }
+  .content-7 img {
+    max-width: 36.4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .content-7 {
+    flex-direction: column;
     text-align: center;
   }
-  .section-book p {
-    text-align: center;
-    width: 500px;
+}
+
+@media screen and (max-width: 410px) {
+  .text {
+    padding: 0 2rem;
   }
-  .section-book {
-    width: 500px;
+  .content-2 {
+    max-width: 36.1rem;
+    width: 100%;
   }
-  .section-book h2 {
-    text-align: center;
+  .content-3 {
+    max-width: 36.4rem;
+    row-gap: 2rem;
   }
-  .section-book p {
+  .content-4 {
+    max-width: 36.4rem;
+    width: 100%;
+  }
+  .content-7 {
+    flex-direction: column;
     text-align: center;
-    width: 500px;
   }
 }

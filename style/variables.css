@@ -1,0 +1,20 @@
+:root {
+  --ink-color: #755cde;
+  --yellow-color: #f6a560;
+  --pink-color: #f39e9e;
+  --red-color: #eb7565;
+  --teal-color: #61c4b7;
+  --indigo-color: #552049;
+  --black-color: #030303;
+  --gray-color: #7a746e;
+  --white-color: #fff7f0;
+  /* TOPOGRRAFIYA */
+  --h1-fs: 5.6rem;
+  --h1-ln: 7rem;
+  --h2-fs: 4rem;
+  --h2-ln: 5.1rem;
+  --h3-fs: 3.2rem;
+  --h3-ln: 4rem;
+  --p-fs: 1.8rem;
+  --p-ln: 2.8rem;
+}
